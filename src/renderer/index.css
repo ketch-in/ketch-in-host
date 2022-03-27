@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+pre {
+  display: none;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  text-align: right;
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+menu {
+  display: none;
+  position: absolute;
+  margin-left: 50%;
+  width: 240px;
+  height: 44px;
+  left: -120px;
+  background: #222;
+  border-radius: 3;
+  border: 1px solid #666;
+}
+menu ul {
+  list-style: none;
+}
+menu.show {
+  display: block;
+}
+
+/* 개발 모드 - 로그 */
+body.log {
+  background: rgba(0, 0, 0, .1);
+}
+body.log pre {
+  display: block;
+}

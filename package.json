@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
+    "rtcmulticonnection": "^3.7.1",
     "socket.io-client": "^4.3.2"
   },
   "devDependencies": {

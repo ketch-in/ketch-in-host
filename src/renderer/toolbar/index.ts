@@ -1,4 +1,4 @@
-import { ToolbarController } from '@packages/components';
+import { ToolbarController } from '../../../packages/components';
 
 const toolbar = () => {
   const toolbarController = new ToolbarController(document.body, {});

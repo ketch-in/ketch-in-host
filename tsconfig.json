@@ -3,19 +3,14 @@
   "compilerOptions": {
     "allowJs": true,
     "target": "es6",
-    "module": "commonjs",
+    "lib": ["es6", "dom", "dom.iterable"],
+    "module": "umd",
     "noImplicitAny": true,
     "sourceMap": true,
     "baseUrl": ".",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "paths": {
-      "@packages/*": [
-        "packages/*"
-      ]
-    }
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*"

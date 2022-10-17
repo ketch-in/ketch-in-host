@@ -39,6 +39,8 @@ jobs:
         rm -rf out
 
     - name: push
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACCESS_GITHUB }}
       run: |
         git config --local user.name Sotaneum
         git config --local user.email gnyontu39@gmail.com

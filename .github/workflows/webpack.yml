@@ -16,6 +16,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        lfs: true
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -42,6 +44,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_GITHUB }}
       run: |
+        git lfs checkout
         git config --local user.name Sotaneum
         git config --local user.email gnyontu39@gmail.com
         git add .

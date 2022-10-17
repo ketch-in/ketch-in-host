@@ -1,7 +1,7 @@
 {
   "name": "ketch-in-host",
   "version": "0.3.3-beta.1",
-  "productName": "Ketch-In",
+  "productName": "ketch-in-host",
   "description": "Electron-based App. The host's screen can be used as a sketchbook, allowing the host and attendees to draw.",
   "main": "src/main/index.js",
   "repository": {

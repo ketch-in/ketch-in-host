@@ -38,10 +38,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_GITHUB }}
       run: |
-        git checkout -t origin/download
+        git checkout download
         git config --local user.name Sotaneum
         git config --local user.email gnyontu39@gmail.com
-        git pull origin download
         git add .
         git commit -m "update"
         git push

@@ -27,16 +27,13 @@ jobs:
     - name: Build
       run: |
         npm install
-        npm run package
         npm run make
-        npm run publish
 
     - name: move
       run: |
         mkdir ./builds
-        rm -rf ./out/make
         cd ./builds
-        cp -r ../out/* .
+        cp -r ../out/make/zip/* .
         cd ../
         rm -rf out
 

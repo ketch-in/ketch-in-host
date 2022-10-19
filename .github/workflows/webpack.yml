@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [macos, ubuntu, windows]
+        os: [macos, ubuntu]
         node-version: [14.x]
     runs-on: ${{ matrix.os }}-latest
     
@@ -19,14 +19,6 @@ jobs:
       with:
         lfs: true
 
-    - name: checkout
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_GITHUB }}
-      run: |
-        git remote update
-        git fetch
-        git checkout download
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -34,7 +26,6 @@ jobs:
 
     - name: Build
       run: |
-        git checkout main
         npm install
         npm run package
         npm run make
@@ -52,8 +43,6 @@ jobs:
         git checkout download
 
     - name: push
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_GITHUB }}
       run: |
         git config --local user.name Sotaneum
         git config --local user.email gnyontu39@gmail.com

@@ -32,7 +32,7 @@ jobs:
 
     - name: move
       run: |
-        mkdir ./builds
+        mkdir -p ./builds
         cd ./builds
         cp -r ../out/make/zip/* .
         cd ../

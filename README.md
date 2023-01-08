@@ -1,4 +1,6 @@
-<h1 align="center">KETCH IN HOST</h1>
+<h1 align="center">KETCH IN HOST[deprecated]</h1>
+
+<h4 align="center">ketch-in-host는 <a href="https://github.com/ketch-in/ketch-in">ketch-in</a>에서 함께 관리됩니다.</h4>
 
 ## Features
 
